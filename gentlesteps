@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gentle Steps Recovery </title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- FontAwesome Icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo"><div class="logo">
+    <img src="images/logo.png" alt="Gentle Steps Logo">
+</div></a>
+
+      <!-- Desktop Menu -->
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#why-gentle-steps">Why Gentle Steps</a></li>
+        <li><a href="#services">Services</a></li>
+        <a href="blog.html">Blog</a>
+        <li><a href="free-test.html" class="btn-menu">Free Test</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <!-- Mobile Hamburger -->
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+</header>
+
+  <!-- HERO SECTION -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Addiction Recovery</h1>
+      <h1>One gentle Step at a time</h1>
+      <p>We believe that addiction recovery is a step by step journey</p>
+      
+      <a href="#contact" class="btn">Book a consultation today </a>
+    </div>
+  </header>
+  <section id="booking" class="booking-section">
+  <div class="container">
+    <h2>Book a Coaching Session</h2>
+    <p>Pick a time that works for you. Your session will be confirmed instantly and added to your calendar.</p>
+
+    <!-- Calendly Embed -->
+    <div class="calendly-embed">
+      <iframe src="https://calendly.com/gentlestepsorg/addictionrecoverycoaching?embed_domain=YOURDOMAIN.com&embed_type=Inline" 
+        width="100%" 
+        height="700" 
+        frameborder="0">
+      </iframe>
+    </div>
+  </div>
+</section>
+<section class="blog-cta">
+    <h2>Explore Our Journal</h2>
+    <p>Stories, News abd insights on addiction and recovery </p>
+    <a href="blog.html" class="btn-primary">Read Articles</a>
+</section>
+
+  <!-- ============================= -->
+<!-- Free Addiction Test Promo -->
+<!-- ============================= -->
+<section class="free-test-cta">
+  <div class="container">
+    <h2>Not Sure About Your Habits?</h2>
+    <p>Take our Free Addiction Self-Test today. Get a gentle, insightful view of your habits and find out if you may need guidance — all in just a few minutes.</p>
+    <a href="free-test.html" class="btn">Take the Free Addiction Test</a>
+  </div>
+</section>
+
+
+
+<section class="why-gentle-steps">
+  <div class="container">
+    <h2>Why Gentle Steps?</h2>
+    <p>We take a gentle, personalized approach to addiction recovery. Here’s why clients love us:</p>
+
+    <div class="reasons">
+      <div class="reason-card">
+        <h3>Personalized Coaching</h3>
+        <p>We tailor every session to your unique situation and journey.</p>
+      </div>
+
+      <div class="reason-card">
+        <h3>Evidence-Based Approach</h3>
+        <p>Our methods are backed by current psychology and addiction research.</p>
+      </div>
+
+      <div class="reason-card">
+        <h3>Confidential & Safe</h3>
+        <p>Your privacy is our priority. You can feel safe opening up.</p>
+      </div>
+
+      <div class="reason-card">
+        <h3>Supportive Community</h3>
+        <p>We provide ongoing guidance and encouragement at every step.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+ 
+  <!-- CONTACT FORM -->
+  <section id="contact">
+    <h2>Get in Touch</h2>
+    <form action="script.js" method="POST" id="contactForm">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p id="formMessage"></p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2026 Gentle Steps Recovery Coaching | Privacy Policy</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
