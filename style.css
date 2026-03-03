@@ -2026,62 +2026,111 @@ footer a:hover {
   }
 }
 
-
 /* ═══════════════════════════════════════
-   MOBILE FIXES
+   MEET MOSES + GENERAL MOBILE FIXES
 ═══════════════════════════════════════ */
 
 @media screen and (max-width: 768px) {
 
-  .container { padding: 0 1rem; }
+  /* Container full width */
+  .container {
+    padding: 0 1rem;
+  }
 
-  p { font-size: 0.95rem; line-height: 1.6; }
+  /* Meet Moses — stack vertically, left align */
+  .meet-moses {
+    padding: 2.5rem 1rem;
+  }
+
+  .meet-moses-inner {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: left;
+  }
+
+  .meet-moses-image {
+    width: 100%;
+    height: 260px;
+  }
+
+  .meet-moses-text h2 {
+    font-size: 1.6rem;
+    text-align: left;
+  }
+
+  .meet-moses-text p {
+    font-size: 0.93rem;
+    line-height: 1.65;
+    text-align: left;
+  }
+
+  .meet-moses-creds {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: left;
+  }
+
+  .meet-moses-label {
+    text-align: left;
+  }
+
+  /* Global paragraph — no centering */
+  p {
+    font-size: 0.93rem;
+    line-height: 1.6;
+  }
+
   h1 { font-size: 1.75rem; }
   h2 { font-size: 1.45rem; }
   h3 { font-size: 1rem; }
 
+  /* Sections */
   .why-gentle-steps,
   .booking-cards-section,
   .booking-section,
   .free-test-cta,
-  #contact { padding: 2.5rem 1rem; }
+  #contact {
+    padding: 2.5rem 1rem;
+  }
 
-  .why-gentle-steps > .container > p,
-  .booking-cards-section > .container > p { margin-bottom: 1.5rem; font-size: 0.9rem; }
+  /* Hero */
+  .hero-content h1 { font-size: 1.6rem; }
+  .hero-sub { font-size: 0.88rem; line-height: 1.55; }
+  .hero-intro { font-size: 0.83rem; }
 
-  .hero-content h1 { font-size: 1.65rem; }
-  .hero-sub { font-size: 0.9rem; line-height: 1.55; }
-  .hero-intro { font-size: 0.84rem; }
+  /* Reason cards */
+  .reasons { gap: 0.85rem; }
+  .reason-card { max-width: 100%; padding: 1.1rem 1.25rem; flex: 1 1 100%; }
+  .reason-card h3 { font-size: 1rem; margin-bottom: 0.4rem; }
+  .reason-card p { font-size: 0.88rem; line-height: 1.5; }
 
-  .reason-card { max-width: 100%; padding: 1.25rem; }
-  .reason-card p { font-size: 0.9rem; }
-
+  /* Booking cards */
+  .booking-cards { flex-direction: column; }
   .booking-card { padding: 1.5rem 1rem; }
   .booking-card-desc { font-size: 0.9rem; }
-  .booking-cards { flex-direction: column; }
-  .thankyou-cards { flex-direction: column; }
   .booking-card-features li { font-size: 0.85rem; }
+  .thankyou-cards { flex-direction: column; }
 
+  /* FAQ */
   .faq-question { font-size: 0.93rem; padding: 0.9rem 1rem; line-height: 1.4; }
-  .faq-answer { font-size: 0.87rem; padding: 0 1rem 0.9rem; line-height: 1.55; }
+  .faq-answer { font-size: 0.87rem; padding: 0 1rem 0.9rem; }
 
+  /* Intake form */
   .intake-hero { padding: 2rem 1rem 1.75rem; }
   .intake-hero h1 { font-size: 1.55rem; }
   .intake-hero p { font-size: 0.9rem; }
   .intake-section { padding: 1.75rem 1rem 3rem; }
   .intake-form-wrap { padding: 1.5rem 1rem; }
   .intake-thankyou { padding: 2rem 1rem; }
-  .thankyou-freetest p { font-size: 0.88rem; line-height: 1.55; }
 
+  /* Blog */
   .blog-article-full { padding: 1.75rem 1rem; }
   .blog-article-container h2 { font-size: 1.35rem; }
   .article-body p { font-size: 0.93rem; line-height: 1.7; }
 
-  .whatsapp-float {
-    bottom: 1rem; right: 1rem;
-    padding: 0.55rem 0.9rem;
-    font-size: 0.78rem;
-  }
+  /* WhatsApp */
+  .whatsapp-float { bottom: 1rem; right: 1rem; padding: 0.55rem 0.9rem; font-size: 0.78rem; }
 }
 
 @media screen and (max-width: 400px) {
@@ -2091,7 +2140,7 @@ footer a:hover {
 }
 
 /* ═══════════════════════════════════════
-   FREE TEST PAGE STYLES
+   FREE TEST + BOOKING FORM EXTRAS
 ═══════════════════════════════════════ */
 
 .intake-field-note {
@@ -2099,57 +2148,39 @@ footer a:hover {
   margin-top: 0.4rem; font-style: italic;
 }
 
-.ft-hero {
-  background: linear-gradient(135deg, #1B3A5C 0%, #0F2238 100%);
-  padding: 4rem 0 3rem; text-align: center;
-}
+.ft-hero { background: linear-gradient(135deg, #1B3A5C 0%, #0F2238 100%); padding: 4rem 0 3rem; text-align: center; }
 .ft-hero-inner { max-width: 680px; margin: 0 auto; padding: 0 1rem; }
-.ft-hero-tag {
-  display: inline-block; background: rgba(255,255,255,0.15); color: #fff;
-  font-size: 0.82rem; font-weight: 600; letter-spacing: 0.06em;
-  padding: 0.35rem 1rem; border-radius: 20px; margin-bottom: 1.2rem;
-  text-transform: uppercase;
-}
+.ft-hero-tag { display: inline-block; background: rgba(255,255,255,0.15); color: #fff; font-size: 0.82rem; font-weight: 600; letter-spacing: 0.06em; padding: 0.35rem 1rem; border-radius: 20px; margin-bottom: 1.2rem; text-transform: uppercase; }
 .ft-hero h1 { font-size: 2.4rem; font-weight: 700; color: #fff; line-height: 1.2; margin-bottom: 1rem; }
 .ft-hero p { font-size: 1rem; color: rgba(255,255,255,0.85); line-height: 1.65; margin-bottom: 1.5rem; }
 .ft-hero-pills { display: flex; justify-content: center; gap: 0.75rem; flex-wrap: wrap; }
-.ft-hero-pills span {
-  background: rgba(255,255,255,0.12); color: #fff; font-size: 0.85rem;
-  font-weight: 500; padding: 0.35rem 0.9rem; border-radius: 20px;
-  border: 1px solid rgba(255,255,255,0.2);
-}
+.ft-hero-pills span { background: rgba(255,255,255,0.12); color: #fff; font-size: 0.85rem; font-weight: 500; padding: 0.35rem 0.9rem; border-radius: 20px; border: 1px solid rgba(255,255,255,0.2); }
 .ft-quiz-section { background: #f5f7fa; padding: 2.5rem 0 4rem; min-height: 60vh; }
 .ft-quiz-container { max-width: 680px; margin: 0 auto; padding: 0 1rem; }
 .ft-progress-wrap { margin-bottom: 2rem; }
 .ft-progress-meta { display: flex; justify-content: space-between; font-size: 0.85rem; color: #888; font-weight: 500; margin-bottom: 0.5rem; }
 .ft-progress-track { background: #e0e0e0; border-radius: 10px; height: 6px; overflow: hidden; }
 .ft-q-num { font-size: 0.78rem; font-weight: 600; color: #1B3A5C; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 0.75rem; }
-
 .result-level { display: inline-block; font-size: 0.82rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 0.4rem 1.2rem; border-radius: 20px; margin-bottom: 1rem; }
-.result-level--high     { background: #fce4ec; color: #c62828; }
+.result-level--high { background: #fce4ec; color: #c62828; }
 .result-level--moderate { background: #fff3e0; color: #e65100; }
-.result-level--mild     { background: #fff9c4; color: #f57f17; }
-.result-level--low      { background: #e8f5e9; color: #2e7d32; }
-
+.result-level--mild { background: #fff9c4; color: #f57f17; }
+.result-level--low { background: #e8f5e9; color: #2e7d32; }
 #resultHeader { background: #fff; border-radius: 16px; padding: 1.75rem 1.25rem; box-shadow: 0 4px 24px rgba(0,0,0,0.07); margin-bottom: 1.25rem; }
 #resultHeader h2 { font-size: 1.35rem; font-weight: 700; color: #1a1a1a; line-height: 1.35; margin-bottom: 0.75rem; }
 .result-intro { font-size: 0.95rem; color: #555; line-height: 1.65; }
-
 .result-areas-box { background: #fff; border-radius: 16px; padding: 1.75rem 1.25rem; box-shadow: 0 4px 24px rgba(0,0,0,0.07); margin-bottom: 1.25rem; }
 .result-areas-box h3 { font-size: 1rem; font-weight: 700; color: #1a1a1a; margin-bottom: 0.4rem; }
 .result-areas-box p { font-size: 0.9rem; color: #666; margin-bottom: 0.9rem; }
 .result-area-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; }
 .result-area-tag { display: flex; align-items: center; gap: 0.4rem; background: #EAF1F8; color: #1B3A5C; font-size: 0.85rem; font-weight: 600; padding: 0.3rem 0.85rem; border-radius: 20px; }
 .result-area-dot { width: 7px; height: 7px; border-radius: 50%; background: #1B3A5C; flex-shrink: 0; }
-
 .result-coaching-box { background: #fff; border-radius: 16px; padding: 1.75rem 1.25rem; box-shadow: 0 4px 24px rgba(0,0,0,0.07); margin-bottom: 1.25rem; border-left: 4px solid #1B3A5C; }
 .result-coaching-box h3 { font-size: 1rem; font-weight: 700; color: #1a1a1a; margin-bottom: 0.4rem; }
 .result-coaching-box p { font-size: 0.9rem; color: #666; margin-bottom: 0.9rem; line-height: 1.6; }
 .result-coaching-list { list-style: none; padding: 0; margin-bottom: 1rem; }
 .result-coaching-list li { font-size: 0.9rem; color: #333; padding: 0.4rem 0; border-bottom: 1px solid #f0f0f0; line-height: 1.5; }
 .result-coaching-list li:last-child { border-bottom: none; }
-.result-coaching-close { font-style: italic; color: #777 !important; font-size: 0.87rem !important; }
-
 .ft-result-cta { background: linear-gradient(135deg, #1B3A5C 0%, #0F2238 100%); border-radius: 16px; padding: 2rem 1.25rem; text-align: center; margin-top: 1.25rem; }
 .ft-result-cta h3 { font-size: 1.3rem; font-weight: 700; color: #fff; margin-bottom: 0.5rem; }
 .ft-result-cta > p { font-size: 0.93rem; color: rgba(255,255,255,0.85); line-height: 1.65; margin-bottom: 1.25rem; }
@@ -2159,32 +2190,7 @@ footer a:hover {
 
 @media screen and (max-width: 768px) {
   .ft-hero h1 { font-size: 1.7rem; }
-  .ft-hero p  { font-size: 0.92rem; }
+  .ft-hero p { font-size: 0.92rem; }
   .ft-cta-buttons { flex-direction: column; align-items: stretch; }
   .ft-cta-buttons .btn { text-align: center; }
-}
-
-/* ═══════════════════════════════════════
-   REASON CARDS MOBILE TIGHTENING
-═══════════════════════════════════════ */
-@media screen and (max-width: 768px) {
-  .reasons {
-    gap: 0.85rem;
-  }
-
-  .reason-card {
-    padding: 1.1rem 1.25rem;
-    max-width: 100%;
-    flex: 1 1 100%;
-  }
-
-  .reason-card h3 {
-    font-size: 1rem;
-    margin-bottom: 0.4rem;
-  }
-
-  .reason-card p {
-    font-size: 0.88rem;
-    line-height: 1.5;
-  }
 }
