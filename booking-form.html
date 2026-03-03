@@ -41,7 +41,7 @@
   </header>
 
   <!-- PAGE HERO -->
-  <section class="intake-hero">
+  <section class="intake-hero" id="intakeHero">
     <div class="container intake-hero-content">
       <span class="intake-hero-tag">Confidential · Takes 5 minutes · No judgement</span>
       <h1>Let's get to know you before we meet</h1>
@@ -144,6 +144,207 @@
               <option>I've stopped recently and I'm maintaining</option>
               <option>I'm in early recovery and need support</option>
               <option>I'm not sure — things just don't feel right</option>
+            </select>
+          </div>
+
+          <!-- Q7 -->
+          <div class="intake-field">
+            <label for="previousAttempts">7. Have you tried to quit or reduce before?</label>
+            <select id="previousAttempts" name="Previous Attempts to Quit">
+              <option value="" disabled selected>Select an option</option>
+              <option>No — this is my first time seeking help</option>
+              <option>Yes — I tried on my own</option>
+              <option>Yes — I tried rehab or a programme</option>
+              <option>Yes — I've tried multiple times</option>
+              <option>Yes — I relapsed after a period of recovery</option>
+            </select>
+          </div>
+
+          <!-- Q8 -->
+          <div class="intake-field">
+            <label for="lifeImpact">8. Which areas of your life has this affected most? <span class="required">*</span></label>
+            <textarea id="lifeImpact" name="Life Impact" rows="3" placeholder="e.g. my relationship, work performance, mental health, self-esteem..."></textarea>
+          </div>
+
+          <!-- Q9 -->
+          <div class="intake-field">
+            <label for="support">9. Do you have any support around you right now?</label>
+            <select id="support" name="Current Support System">
+              <option value="" disabled selected>Select an option</option>
+              <option>Yes — family and friends know and are supportive</option>
+              <option>Some people know but it's complicated</option>
+              <option>Nobody around me knows</option>
+              <option>I've been hiding it completely</option>
+              <option>I'm seeing a therapist or counsellor already</option>
+            </select>
+          </div>
+
+          <!-- Q10 -->
+          <div class="intake-field">
+            <label for="whyNow">10. What made you decide to reach out right now?</label>
+            <textarea id="whyNow" name="Why Now" rows="3" placeholder="There's no wrong answer — could be a moment, a feeling, something that happened..."></textarea>
+          </div>
+
+          <!-- Q11 -->
+          <div class="intake-field">
+            <label for="goals">11. What do you most want from coaching? <span class="required">*</span></label>
+            <textarea id="goals" name="Goals" rows="3" placeholder="e.g. stop completely, reduce gradually, understand my triggers, rebuild my confidence, fix my relationships..."></textarea>
+          </div>
+
+          <!-- Q12 -->
+          <div class="intake-field">
+            <label for="sessionPref">12. How would you prefer to have your sessions?</label>
+            <select id="sessionPref" name="Session Preference">
+              <option value="" disabled selected>Select an option</option>
+              <option>Video call (e.g. Zoom, Google Meet)</option>
+              <option>Phone call</option>
+              <option>No preference</option>
+            </select>
+          </div>
+
+          <!-- Q13 -->
+          <div class="intake-field">
+            <label for="anythingElse">13. Is there anything else you'd like Moses to know before your first session?</label>
+            <textarea id="anythingElse" name="Anything Else" rows="4" placeholder="Anything at all — the more you share, the more prepared we can be for you."></textarea>
+          </div>
+
+          <!-- Email -->
+          <div class="intake-field">
+            <label for="email">Finally — what's the best email to reach you on? <span class="required">*</span></label>
+            <input type="email" id="email" name="Email Address" placeholder="your@email.com" required>
+          </div>
+
+          <!-- Phone -->
+          <div class="intake-field">
+            <label for="phone">What’s your phone number? <span class="required">*</span></label>
+            <input type="tel" id="phone" name="Phone Number" placeholder="e.g. 0712 345 678" required>
+          </div>
+
+          <button type="submit" class="intake-submit">Submit My Intake Form</button>
+          <p class="intake-privacy">🔒 Everything you share is completely confidential. Moses will be in touch within 24 hours.</p>
+
+        </form>
+      </div>
+
+      <!-- THANK YOU — shown after submission -->
+      <div class="intake-thankyou" id="thankYou" style="display:none;">
+
+        <div class="thankyou-icon">🌿</div>
+        <h2>Thank you for trusting us with your story.</h2>
+        <p class="thankyou-lead">Moses has received your form and will be in touch within <strong>24 hours</strong> to arrange your session. You've taken a genuinely courageous step — and it matters.</p>
+
+        <div class="thankyou-divider"></div>
+
+        <div class="thankyou-freetest">
+          <h3>While you wait — take the free assessment</h3>
+          <p>Our free addiction self-assessment takes just 3 minutes and gives you a personalised picture of how your habits are affecting different areas of your life. It's a great way to go into your first session with even more clarity.</p>
+          <a href="free-test.html" class="btn btn--outline">Take the Free Assessment →</a>
+        </div>
+
+        <div class="thankyou-divider"></div>
+
+        <h3>Or go ahead and pick your session time</h3>
+        <p style="margin-bottom: 2rem; color: #666;">If you'd like to lock in a time straight away, choose the option that feels right for you.</p>
+
+        <div class="booking-cards thankyou-cards">
+
+          <div class="booking-card booking-card--free">
+            <div class="booking-card-badge">Free</div>
+            <h3>Free Initial Consultation</h3>
+            <p class="booking-card-duration">⏱ 15 Minutes</p>
+            <p class="booking-card-desc">A relaxed, no-obligation first chat to talk through where you are and how Gentle Steps can help.</p>
+            <ul class="booking-card-features">
+              <li>✓ No commitment required</li>
+              <li>✓ Completely confidential</li>
+              <li>✓ Video or phone</li>
+            </ul>
+            <a href="https://calendly.com/gentlestepsorg/free-consultation" class="btn btn--outline" target="_blank">Book Free Consultation</a>
+          </div>
+
+          <div class="booking-card booking-card--paid">
+            <div class="booking-card-badge booking-card-badge--paid">Coaching</div>
+            <h3>Book a Coaching Session</h3>
+            <p class="booking-card-duration">⏱ 60 Minutes</p>
+            <p class="booking-card-desc">Ready to start? Book your first full session. It will be personalised entirely around what you've shared.</p>
+            <ul class="booking-card-features">
+              <li>✓ Tailored to your goals</li>
+              <li>✓ Evidence-based methods</li>
+              <li>✓ Confirmed to your calendar</li>
+            </ul>
+            <a href="https://calendly.com/gentlestepsorg/addictionrecoverycoaching" class="btn" target="_blank">Book a Session</a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2026 Gentle Steps Recovery Coaching | <a href="#">Privacy Policy</a></p>
+  </footer>
+
+  <script src="menu.js"></script>
+  <script>
+    const form = document.getElementById('intakeForm');
+    const formWrap = document.getElementById('formWrap');
+    const thankYou = document.getElementById('thankYou');
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const submitBtn = form.querySelector('.intake-submit');
+      submitBtn.textContent = 'Sending...';
+      submitBtn.disabled = true;
+
+      const formData = new FormData(form);
+
+      try {
+        const response = await fetch('https://formspree.io/f/mbdabrap', {
+          method: 'POST',
+          body: formData,
+          headers: {
+            'Accept': 'application/json'
+          }
+        });
+
+        const result = await response.json();
+
+        if (response.ok && result.ok) {
+          formWrap.style.display = 'none';
+          document.getElementById('intakeHero').style.display = 'none';
+          thankYou.style.display = 'block';
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        } else {
+          const errorMsg = result.errors
+            ? result.errors.map(e => e.message).join(', ')
+            : 'Submission failed. Please try again.';
+          submitBtn.textContent = errorMsg;
+          submitBtn.disabled = false;
+        }
+      } catch (err) {
+        submitBtn.textContent = 'Network error — please check your connection and try again.';
+        submitBtn.disabled = false;
+      }
+    });
+  </script>
+
+
+  <!-- WHATSAPP FLOATING BUTTON -->
+  <a href="https://wa.me/254706686488?text=Hi%20Moses%2C%20I%20came%20across%20Gentle%20Steps%20and%20I%27d%20like%20to%20know%20more%20about%20coaching." 
+     class="whatsapp-float" 
+     target="_blank" 
+     aria-label="Chat with Moses on WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="28" height="28">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+      <path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.112 1.526 5.836L.057 23.215a.75.75 0 0 0 .916.916l5.379-1.469A11.943 11.943 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.716 9.716 0 0 1-4.964-1.365l-.356-.214-3.694 1.008 1.008-3.694-.214-.356A9.716 9.716 0 0 1 2.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/>
+    </svg>
+    <span>Chat with Moses</span>
+  </a>
+
+</body>
+</html>              <option>I'm not sure — things just don't feel right</option>
             </select>
           </div>
 
@@ -337,4 +538,5 @@
   </a>
 
 </body>
+
 </html>
