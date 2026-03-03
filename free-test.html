@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Take the free Gentle Steps addiction self-assessment. Get personalised insight into your habits in just a few minutes.">
-  <title>Free Addiction Self-Assessment | Gentle Steps Coaching</title>
+  <meta name="description" content="Take the free Gentle Steps addiction self-assessment. Honest answers, personalised results, no judgement.">
+  <title>Free Addiction Assessment | Gentle Steps Recovery Coaching</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -17,209 +17,193 @@
         <a href="index.html" class="logo">Gentle Steps</a>
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
-          <li><a href="index.html#why-gentle-steps">Why Gentle Steps</a></li>
-          <li><a href="blog.html">The Journal</a></li>
-          <li><a href="free-test.html">Free Assessment</a></li>
+          <li><a href="blog.html">Journal</a></li>
+          <li><a href="free-test.html" class="btn-menu">Free Test</a></li>
           <li><a href="index.html#contact">Contact</a></li>
-          <li><a href="index.html#booking" class="btn-menu">Book a Session</a></li>
+          <li><a href="booking-form.html" class="btn-nav-book">Book a Session</a></li>
         </ul>
-        <div class="hamburger" id="hamburger" aria-label="Open menu" role="button">
-          <span></span>
-          <span></span>
-          <span></span>
+        <div class="hamburger">
+          <span></span><span></span><span></span>
         </div>
       </div>
-      <div class="mobile-menu" id="mobileMenu">
-        <ul class="mobile-nav-links">
-          <li><a href="index.html" class="mobile-nav-link">Home</a></li>
-          <li><a href="index.html#why-gentle-steps" class="mobile-nav-link">Why Gentle Steps</a></li>
-          <li><a href="blog.html" class="mobile-nav-link">The Journal</a></li>
-          <li><a href="free-test.html" class="mobile-nav-link">Free Assessment</a></li>
-          <li><a href="index.html#contact" class="mobile-nav-link">Contact</a></li>
-          <li><a href="index.html#booking" class="mobile-nav-link mobile-nav-book">Book a Session</a></li>
-        </ul>
-      </div>
     </nav>
+    <div class="mobile-menu">
+      <ul class="mobile-nav-links">
+        <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+        <li><a href="blog.html" class="mobile-nav-link">Journal</a></li>
+        <li><a href="free-test.html" class="mobile-nav-link">Free Assessment</a></li>
+        <li><a href="index.html#contact" class="mobile-nav-link">Contact</a></li>
+        <li><a href="booking-form.html" class="mobile-nav-book">Book a Session</a></li>
+      </ul>
+    </div>
   </header>
 
-  <!-- PAGE HERO -->
-  <section class="test-hero">
-    <div class="container test-hero-content">
-      <span class="test-hero-tag">Free · Takes 3 minutes · Confidential</span>
-      <h1>How are your habits really affecting you?</h1>
-      <p>Answer 13 honest questions and we'll give you a personalised picture of where you are — and how support could help. No judgement, just clarity.</p>
+  <!-- HERO -->
+  <section class="ft-hero" id="ftHero">
+    <div class="container ft-hero-inner">
+      <span class="ft-hero-tag">Free · 3 minutes · No sign-up needed</span>
+      <h1>How much is it affecting your life?</h1>
+      <p>Answer 13 honest questions and get a personalised picture of where you are — and what support might look like for you. Everything is completely private.</p>
+      <div class="ft-hero-pills">
+        <span>🔒 Private</span>
+        <span>📋 13 questions</span>
+        <span>🌿 No judgement</span>
+      </div>
     </div>
   </section>
 
-  <!-- QUIZ SECTION -->
-  <section class="quiz-section">
-    <div class="container quiz-container">
+  <!-- QUIZ -->
+  <section class="ft-quiz-section">
+    <div class="container ft-quiz-container">
 
-      <!-- Progress -->
-      <div class="quiz-meta">
-        <span class="quiz-counter" id="questionCounter">Question 1 of 13</span>
-        <span class="quiz-percent" id="questionPercent">0% complete</span>
-      </div>
-      <div class="quiz-progress">
-        <div class="quiz-progress-bar" id="progressBar"></div>
+      <!-- Progress bar -->
+      <div class="ft-progress-wrap">
+        <div class="ft-progress-meta">
+          <span id="questionCounter">Question 1 of 13</span>
+          <span id="questionPercent">0% complete</span>
+        </div>
+        <div class="ft-progress-track">
+          <div class="quiz-progress-bar" id="progressBar"></div>
+        </div>
       </div>
 
+      <!-- Form -->
       <form id="quizForm">
 
         <div class="quiz-card active" data-question="1" data-area="Loss of Control">
-          <p class="question-text">Do you often use substances or engage in addictive behaviours more than you intended to?</p>
+          <p class="ft-q-num">1 / 13</p>
+          <p class="question-text">Do you often use substances or engage in addictive behaviours more than you intended?</p>
           <div class="answer-buttons">
-            <button type="button" class="answer-btn answer-btn--yes" data-value="1">Yes</button>
-            <button type="button" class="answer-btn answer-btn--no" data-value="0">No</button>
+            <button type="button" class="answer-btn" data-value="1">Yes</button>
+            <button type="button" class="answer-btn" data-value="0">No</button>
           </div>
         </div>
 
         <div class="quiz-card" data-question="2" data-area="Difficulty Stopping">
-          <p class="question-text">Have you tried to cut down or stop and found it harder than you expected?</p>
+          <p class="ft-q-num">2 / 13</p>
+          <p class="question-text">Have you tried to cut down or stop — and found it harder than you expected?</p>
           <div class="answer-buttons">
-            <button type="button" class="answer-btn answer-btn--yes" data-value="1">Yes</button>
-            <button type="button" class="answer-btn answer-btn--no" data-value="0">No</button>
+            <button type="button" class="answer-btn" data-value="1">Yes</button>
+            <button type="button" class="answer-btn" data-value="0">No</button>
           </div>
         </div>
 
         <div class="quiz-card" data-question="3" data-area="Time & Energy">
+          <p class="ft-q-num">3 / 13</p>
           <p class="question-text">Do you spend a lot of time obtaining, using, or recovering from your addictive behaviour?</p>
           <div class="answer-buttons">
-            <button type="button" class="answer-btn answer-btn--yes" data-value="1">Yes</button>
-            <button type="button" class="answer-btn answer-btn--no" data-value="0">No</button>
+            <button type="button" class="answer-btn" data-value="1">Yes</button>
+            <button type="button" class="answer-btn" data-value="0">No</button>
           </div>
         </div>
 
         <div class="quiz-card" data-question="4" data-area="Responsibilities">
-          <p class="question-text">Has this behaviour caused you to neglect responsibilities at work, school, or home?</p>
+          <p class="ft-q-num">4 / 13</p>
+          <p class="question-text">Has this caused you to neglect responsibilities at work, school, or home?</p>
           <div class="answer-buttons">
-            <button type="button" class="answer-btn answer-btn--yes" data-value="1">Yes</button>
-            <button type="button" class="answer-btn answer-btn--no" data-value="0">No</button>
+            <button type="button" class="answer-btn" data-value="1">Yes</button>
+            <button type="button" class="answer-btn" data-value="0">No</button>
           </div>
         </div>
 
         <div class="quiz-card" data-question="5" data-area="Physical & Mental Health">
-          <p class="question-text">Do you continue the behaviour even when you know it's causing you harm?</p>
+          <p class="ft-q-num">5 / 13</p>
+          <p class="question-text">Do you continue the behaviour even when it is affecting your physical or mental health?</p>
           <div class="answer-buttons">
-            <button type="button" class="answer-btn answer-btn--yes" data-value="1">Yes</button>
-            <button type="button" class="answer-btn answer-btn--no" data-value="0">No</button>
+            <button type="button" class="answer-btn" data-value="1">Yes</button>
+            <button type="button" class="answer-btn" data-value="0">No</button>
           </div>
         </div>
 
         <div class="quiz-card" data-question="6" data-area="Cravings">
-          <p class="question-text">Do cravings or urges make it hard to focus on anything else?</p>
+          <p class="ft-q-num">6 / 13</p>
+          <p class="question-text">Do cravings or urges make it hard to think about anything else?</p>
           <div class="answer-buttons">
-            <button type="button" class="answer-btn answer-btn--yes" data-value="1">Yes</button>
-            <button type="button" class="answer-btn answer-btn--no" data-value="0">No</button>
+            <button type="button" class="answer-btn" data-value="1">Yes</button>
+            <button type="button" class="answer-btn" data-value="0">No</button>
           </div>
         </div>
 
         <div class="quiz-card" data-question="7" data-area="Withdrawal">
-          <p class="question-text">Have you experienced withdrawal symptoms when you've tried to stop or reduce?</p>
+          <p class="ft-q-num">7 / 13</p>
+          <p class="question-text">Have you experienced withdrawal symptoms — anxiety, shaking, irritability — when you stop or reduce?</p>
           <div class="answer-buttons">
-            <button type="button" class="answer-btn answer-btn--yes" data-value="1">Yes</button>
-            <button type="button" class="answer-btn answer-btn--no" data-value="0">No</button>
+            <button type="button" class="answer-btn" data-value="1">Yes</button>
+            <button type="button" class="answer-btn" data-value="0">No</button>
           </div>
         </div>
 
         <div class="quiz-card" data-question="8" data-area="Emotional Coping">
-          <p class="question-text">Do you turn to addictive behaviours to cope with stress, boredom, or difficult emotions?</p>
+          <p class="ft-q-num">8 / 13</p>
+          <p class="question-text">Do you reach for your addiction to cope with stress, boredom, or difficult emotions?</p>
           <div class="answer-buttons">
-            <button type="button" class="answer-btn answer-btn--yes" data-value="1">Yes</button>
-            <button type="button" class="answer-btn answer-btn--no" data-value="0">No</button>
+            <button type="button" class="answer-btn" data-value="1">Yes</button>
+            <button type="button" class="answer-btn" data-value="0">No</button>
           </div>
         </div>
 
         <div class="quiz-card" data-question="9" data-area="Secrecy">
-          <p class="question-text">Have you hidden this behaviour from people close to you?</p>
+          <p class="ft-q-num">9 / 13</p>
+          <p class="question-text">Have you hidden your behaviour from the people close to you?</p>
           <div class="answer-buttons">
-            <button type="button" class="answer-btn answer-btn--yes" data-value="1">Yes</button>
-            <button type="button" class="answer-btn answer-btn--no" data-value="0">No</button>
+            <button type="button" class="answer-btn" data-value="1">Yes</button>
+            <button type="button" class="answer-btn" data-value="0">No</button>
           </div>
         </div>
 
         <div class="quiz-card" data-question="10" data-area="Relationships">
-          <p class="question-text">Have your relationships suffered because of your addictive behaviours?</p>
+          <p class="ft-q-num">10 / 13</p>
+          <p class="question-text">Have your relationships suffered because of your addictive behaviour?</p>
           <div class="answer-buttons">
-            <button type="button" class="answer-btn answer-btn--yes" data-value="1">Yes</button>
-            <button type="button" class="answer-btn answer-btn--no" data-value="0">No</button>
+            <button type="button" class="answer-btn" data-value="1">Yes</button>
+            <button type="button" class="answer-btn" data-value="0">No</button>
           </div>
         </div>
 
         <div class="quiz-card" data-question="11" data-area="Enjoyment of Life">
-          <p class="question-text">Do you find it hard to enjoy everyday life without engaging in the addictive behaviour?</p>
+          <p class="ft-q-num">11 / 13</p>
+          <p class="question-text">Do you find it hard to enjoy other activities without the addiction?</p>
           <div class="answer-buttons">
-            <button type="button" class="answer-btn answer-btn--yes" data-value="1">Yes</button>
-            <button type="button" class="answer-btn answer-btn--no" data-value="0">No</button>
+            <button type="button" class="answer-btn" data-value="1">Yes</button>
+            <button type="button" class="answer-btn" data-value="0">No</button>
           </div>
         </div>
 
         <div class="quiz-card" data-question="12" data-area="Self-Care">
-          <p class="question-text">Have you been neglecting your self-care — sleep, eating, hygiene — because of this behaviour?</p>
+          <p class="ft-q-num">12 / 13</p>
+          <p class="question-text">Have you been neglecting sleep, nutrition, or basic self-care because of the addiction?</p>
           <div class="answer-buttons">
-            <button type="button" class="answer-btn answer-btn--yes" data-value="1">Yes</button>
-            <button type="button" class="answer-btn answer-btn--no" data-value="0">No</button>
+            <button type="button" class="answer-btn" data-value="1">Yes</button>
+            <button type="button" class="answer-btn" data-value="0">No</button>
           </div>
         </div>
 
         <div class="quiz-card" data-question="13" data-area="Guilt & Shame">
-          <p class="question-text">Do you feel guilt, shame, or regret after engaging in this behaviour?</p>
+          <p class="ft-q-num">13 / 13</p>
+          <p class="question-text">Do you feel guilt, shame, or regret after engaging in the behaviour?</p>
           <div class="answer-buttons">
-            <button type="button" class="answer-btn answer-btn--yes" data-value="1">Yes</button>
-            <button type="button" class="answer-btn answer-btn--no" data-value="0">No</button>
+            <button type="button" class="answer-btn" data-value="1">Yes</button>
+            <button type="button" class="answer-btn" data-value="0">No</button>
           </div>
         </div>
 
       </form>
 
-      <!-- RESULTS — shown after quiz -->
-      <div class="quiz-result-section" id="quizResult" style="display:none;">
+      <!-- RESULTS -->
+      <div class="quiz-result" id="quizResult" style="display:none;">
+        <div id="resultHeader"></div>
+        <div id="resultAreas"></div>
+        <div id="resultCoaching"></div>
 
-        <div class="result-header" id="resultHeader"></div>
-
-        <div class="result-areas" id="resultAreas"></div>
-
-        <div class="result-coaching" id="resultCoaching"></div>
-
-        <div class="result-disclaimer">
-          <p>This assessment is not a clinical diagnosis. It is intended as a gentle, reflective tool to help you understand your habits. If you are in crisis, please reach out to a professional immediately.</p>
-        </div>
-
-        <!-- Booking cards -->
-        <div class="result-booking">
-          <h3>Your next step doesn't have to be a big one</h3>
-          <p>Whether you want to talk it through or you're ready to start — we're here.</p>
-          <div class="booking-cards result-booking-cards">
-
-            <div class="booking-card booking-card--free">
-              <div class="booking-card-badge">Free</div>
-              <h3>Free Initial Consultation</h3>
-              <p class="booking-card-duration">⏱ 15 Minutes</p>
-              <p class="booking-card-desc">Let's have a relaxed, no-obligation chat about what you're going through and how Gentle Steps can help.</p>
-              <ul class="booking-card-features">
-                <li>✓ No commitment required</li>
-                <li>✓ Completely confidential</li>
-                <li>✓ Held via video or phone</li>
-              </ul>
-              <a href="https://calendly.com/gentlestepsorg/free-consultation" class="btn btn--outline" target="_blank">Book Free Consultation</a>
-            </div>
-
-            <div class="booking-card booking-card--paid">
-              <div class="booking-card-badge booking-card-badge--paid">Coaching</div>
-              <h3>Book a Coaching Session</h3>
-              <p class="booking-card-duration">⏱ 60 Minutes</p>
-              <p class="booking-card-desc">Ready to take that step? Book a full one-on-one session tailored entirely to your journey.</p>
-              <ul class="booking-card-features">
-                <li>✓ Personalised to your goals</li>
-                <li>✓ Evidence-based methods</li>
-                <li>✓ Confirmed instantly to your calendar</li>
-              </ul>
-              <a href="https://calendly.com/gentlestepsorg/addictionrecoverycoaching" class="btn" target="_blank">Book a Session</a>
-            </div>
-
+        <div class="ft-result-cta">
+          <h3>Ready to take the next step?</h3>
+          <p>A personalised one-on-one session with Moses gives you a clear, honest plan built entirely around your story — not a generic programme.</p>
+          <div class="ft-cta-buttons">
+            <a href="booking-form.html" class="btn">Book a Coaching Session</a>
+            <a href="https://wa.me/254738683823?text=Hi%20Moses%2C%20I%20just%20took%20the%20free%20assessment%20and%20I%27d%20like%20to%20talk." class="btn btn--outline" target="_blank">WhatsApp Moses</a>
           </div>
+          <p class="ft-result-contact">📞 0738 683 823 &nbsp;·&nbsp; 🌐 gentlestepsrecovery.co.ke</p>
         </div>
-
       </div>
 
     </div>
@@ -230,21 +214,33 @@
     <p>&copy; 2026 Gentle Steps Recovery Coaching | <a href="#">Privacy Policy</a></p>
   </footer>
 
-  <script src="menu.js"></script>
-  <script src="test.js"></script>
-
-
-  <!-- WHATSAPP FLOATING BUTTON -->
-  <a href="https://wa.me/254706686488?text=Hi%20Moses%2C%20I%20came%20across%20Gentle%20Steps%20and%20I%27d%20like%20to%20know%20more%20about%20coaching." 
-     class="whatsapp-float" 
-     target="_blank" 
-     aria-label="Chat with Moses on WhatsApp">
+  <!-- WHATSAPP FLOAT -->
+  <a href="https://wa.me/254738683823?text=Hi%20Moses%2C%20I%20came%20across%20Gentle%20Steps%20and%20I%27d%20like%20to%20know%20more%20about%20coaching."
+     class="whatsapp-float" target="_blank" aria-label="Chat with Moses on WhatsApp">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="28" height="28">
       <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
       <path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.112 1.526 5.836L.057 23.215a.75.75 0 0 0 .916.916l5.379-1.469A11.943 11.943 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.716 9.716 0 0 1-4.964-1.365l-.356-.214-3.694 1.008 1.008-3.694-.214-.356A9.716 9.716 0 0 1 2.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/>
     </svg>
     <span>Chat with Moses</span>
   </a>
+
+  <script src="menu.js"></script>
+  <script src="test.js"></script>
+  <script>
+    // Hide hero when results appear
+    const resultObserver = new MutationObserver(function() {
+      const result = document.getElementById('quizResult');
+      const hero = document.getElementById('ftHero');
+      if (result && result.style.display !== 'none') {
+        if (hero) hero.style.display = 'none';
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    });
+    window.addEventListener('DOMContentLoaded', function() {
+      const result = document.getElementById('quizResult');
+      if (result) resultObserver.observe(result, { attributes: true });
+    });
+  </script>
 
 </body>
 </html>
