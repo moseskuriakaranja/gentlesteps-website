@@ -2028,206 +2028,224 @@ footer a:hover {
 
 
 /* ═══════════════════════════════════════
-   MOBILE — REMOVE ALL CONTAINER RESTRICTIONS
+   PRICING SECTION
+═══════════════════════════════════════ */
+
+.pricing-section {
+  background: #fff;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+.pricing-header { margin-bottom: 2rem; }
+.pricing-tag {
+  display: inline-block;
+  background: #e0f7f4;
+  color: #00796b;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.3rem 1rem;
+  border-radius: 20px;
+  margin-bottom: 0.75rem;
+}
+.pricing-header h2 { font-size: 2.2rem; color: #1a1a1a; margin-bottom: 0.5rem; }
+.pricing-header p { font-size: 1rem; color: #888; max-width: 500px; margin: 0 auto; }
+.pricing-toggle {
+  display: inline-flex;
+  background: #f0f0f0;
+  border-radius: 12px;
+  padding: 4px;
+  margin: 0 auto 2.5rem;
+  gap: 4px;
+}
+.toggle-btn {
+  padding: 0.6rem 1.5rem;
+  border: none;
+  background: transparent;
+  border-radius: 9px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  color: #888;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.toggle-btn.active {
+  background: #1B3A5C;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(27,58,92,0.2);
+}
+.pricing-cards {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+.pricing-card {
+  background: #fafafa;
+  border: 1.5px solid #eee;
+  border-radius: 20px;
+  padding: 2rem 1.75rem;
+  flex: 1 1 280px;
+  max-width: 340px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+.pricing-card--featured {
+  background: #1B3A5C;
+  border-color: #1B3A5C;
+}
+.pricing-card--wide { max-width: 480px; }
+.pricing-badge {
+  display: inline-block;
+  background: #EAF1F8;
+  color: #1B3A5C;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.3rem 0.9rem;
+  border-radius: 20px;
+}
+.pricing-badge--gold { background: #FFF3CD; color: #856404; }
+.pricing-card--featured .pricing-badge--gold { background: rgba(255,243,205,0.15); color: #FFD700; }
+.pricing-amount { display: flex; align-items: flex-end; gap: 0.25rem; line-height: 1; }
+.pricing-currency { font-size: 1.1rem; font-weight: 600; color: #1B3A5C; padding-bottom: 0.4rem; }
+.pricing-card--featured .pricing-currency { color: rgba(255,255,255,0.8); }
+.pricing-number { font-size: 3rem; font-weight: 700; color: #1B3A5C; line-height: 1; }
+.pricing-card--featured .pricing-number { color: #fff; }
+.pricing-per { font-size: 0.85rem; color: #999; margin: 0; }
+.pricing-card--featured .pricing-per { color: rgba(255,255,255,0.6); }
+.pricing-features { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.55rem; flex: 1; }
+.pricing-features li { font-size: 0.92rem; color: #444; line-height: 1.4; }
+.pricing-card--featured .pricing-features li { color: rgba(255,255,255,0.88); }
+.pricing-locations { background: #EAF1F8; border-radius: 12px; padding: 1rem; }
+.pricing-card--featured .pricing-locations { background: rgba(255,255,255,0.1); }
+.pricing-locations-title { font-size: 0.82rem; font-weight: 700; color: #1B3A5C; margin-bottom: 0.6rem; }
+.pricing-card--featured .pricing-locations-title { color: rgba(255,255,255,0.9); }
+.pricing-location-tags { display: flex; flex-direction: column; gap: 0.35rem; }
+.pricing-location-tags span { font-size: 0.88rem; color: #333; padding: 0.3rem 0; border-bottom: 1px solid #d0e4f0; }
+.pricing-card--featured .pricing-location-tags span { color: rgba(255,255,255,0.8); border-bottom-color: rgba(255,255,255,0.1); }
+.pricing-location-tags span:last-child { border-bottom: none; }
+.pricing-btn {
+  display: block;
+  text-align: center;
+  background: #1B3A5C;
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 700;
+  font-family: 'Inter', sans-serif;
+  padding: 0.85rem 1rem;
+  border-radius: 10px;
+  transition: background 0.2s ease, transform 0.2s ease;
+  text-decoration: none;
+}
+.pricing-btn:hover { background: #0F2238; transform: translateY(-2px); }
+.pricing-btn--gold { background: #C8922A; }
+.pricing-btn--gold:hover { background: #a87520; }
+.pricing-card--featured .pricing-btn { background: #fff; color: #1B3A5C; }
+.pricing-card--featured .pricing-btn:hover { background: #EAF1F8; }
+.pricing-note { font-size: 0.85rem; color: #aaa; text-align: center; margin-top: 0.5rem; }
+
+/* ═══════════════════════════════════════
+   MOBILE FIXES — clean, no conflicts
 ═══════════════════════════════════════ */
 
 @media screen and (max-width: 768px) {
 
+  /* Containers — full width, small padding */
   .container,
-  .nav-container,
   .intake-container,
   .intake-hero-content,
-  .faq-container,
-  .blog-article-container,
-  .meet-moses-inner {
-    max-width: 100% !important;
-    width: 100% !important;
-    padding-left: 1rem !important;
-    padding-right: 1rem !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
+  .faq-container {
+    max-width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
-  .intake-form-wrap,
-  .intake-thankyou {
-    padding: 1.5rem 1rem !important;
-    border-radius: 12px !important;
-  }
+  /* Typography */
+  body { font-size: 0.93rem; }
+  h1 { font-size: 1.7rem; }
+  h2 { font-size: 1.4rem; }
+  h3 { font-size: 1rem; }
+  p  { font-size: 0.92rem; line-height: 1.6; }
 
-  .intake-hero {
-    padding: 2rem 1rem !important;
-  }
-
-  .intake-hero h1 {
-    font-size: 1.5rem !important;
-    text-align: left !important;
-  }
-
-  .intake-hero p {
-    font-size: 0.9rem !important;
-    line-height: 1.6 !important;
-    text-align: left !important;
-  }
-
-  .intake-thankyou {
-    text-align: left !important;
-  }
-
-  .intake-thankyou h2 {
-    font-size: 1.45rem !important;
-    text-align: left !important;
-    line-height: 1.3 !important;
-  }
-
-  .thankyou-lead {
-    text-align: left !important;
-    font-size: 0.92rem !important;
-  }
-
-  .thankyou-icon {
-    text-align: left !important;
-    font-size: 2.5rem !important;
-    margin-bottom: 0.75rem !important;
-  }
-
-  .thankyou-freetest {
-    padding: 1.25rem !important;
-  }
-
-  .thankyou-freetest h3 {
-    font-size: 1rem !important;
-  }
-
-  .thankyou-freetest p {
-    font-size: 0.88rem !important;
-    line-height: 1.55 !important;
-  }
-
-  /* Meet Moses */
-  .meet-moses {
-    padding: 2rem 1rem !important;
-  }
-
-  .meet-moses-inner {
-    flex-direction: column !important;
-    gap: 1.25rem !important;
-    text-align: left !important;
-  }
-
-  .meet-moses-image {
-    width: 100% !important;
-    height: 220px !important;
-  }
-
-  .meet-moses-text h2,
-  .meet-moses-text p,
-  .meet-moses-label {
-    text-align: left !important;
-  }
-
-  .meet-moses-text p {
-    font-size: 0.92rem !important;
-    line-height: 1.6 !important;
-  }
-
-  .meet-moses-creds {
-    flex-direction: column !important;
-    align-items: flex-start !important;
-    gap: 0.4rem !important;
-  }
-
-  /* All sections full width */
+  /* Sections */
   .why-gentle-steps,
   .booking-cards-section,
   .booking-section,
   .free-test-cta,
   .faq-section,
   .pricing-section,
-  #contact,
-  .meet-moses,
-  .blog-article-full {
-    padding-left: 1rem !important;
-    padding-right: 1rem !important;
-    padding-top: 2.5rem !important;
-    padding-bottom: 2.5rem !important;
-  }
+  #contact { padding: 2.5rem 1rem; }
 
-  /* Typography */
-  h1 { font-size: 1.75rem !important; }
-  h2 { font-size: 1.4rem !important; }
-  h3 { font-size: 1rem !important; }
-  p  { font-size: 0.92rem !important; line-height: 1.6 !important; }
+  /* Hero */
+  .hero-content h1 { font-size: 1.6rem; }
+  .hero-sub { font-size: 0.88rem; }
 
-  /* Cards */
-  .reason-card {
-    max-width: 100% !important;
-    flex: 1 1 100% !important;
-    padding: 1rem 1.1rem !important;
-  }
+  /* Meet Moses */
+  .meet-moses { padding: 2.5rem 1rem; }
+  .meet-moses-inner { flex-direction: column; gap: 1.25rem; text-align: left; }
+  .meet-moses-image { width: 100%; height: 220px; }
+  .meet-moses-text h2 { font-size: 1.4rem; text-align: left; }
+  .meet-moses-text p { font-size: 0.92rem; line-height: 1.6; text-align: left; }
+  .meet-moses-label { text-align: left; }
+  .meet-moses-creds { flex-direction: column; align-items: flex-start; gap: 0.4rem; }
 
-  .reasons { gap: 0.75rem !important; }
+  /* Reason cards */
+  .reasons { gap: 0.75rem; }
+  .reason-card { max-width: 100%; flex: 1 1 100%; padding: 1rem 1.1rem; }
+  .reason-card h3 { font-size: 1rem; }
+  .reason-card p { font-size: 0.88rem; line-height: 1.5; }
 
-  .booking-cards,
-  .thankyou-cards {
-    flex-direction: column !important;
-  }
-
-  .booking-card {
-    padding: 1.25rem 1rem !important;
-    max-width: 100% !important;
-  }
-
-  /* FAQ */
-  .faq-question {
-    font-size: 0.92rem !important;
-    padding: 0.9rem 1rem !important;
-    line-height: 1.4 !important;
-  }
-
-  .faq-answer p {
-    font-size: 0.87rem !important;
-    padding: 0 1rem 0.9rem !important;
-  }
-
-  /* Blog */
-  .article-body p {
-    font-size: 0.92rem !important;
-    line-height: 1.7 !important;
-  }
+  /* Booking cards */
+  .booking-cards { flex-direction: column; }
+  .booking-card { padding: 1.25rem 1rem; max-width: 100%; }
+  .booking-card-desc { font-size: 0.9rem; }
+  .booking-card-features li { font-size: 0.85rem; }
 
   /* Pricing */
-  .pricing-section {
-    padding: 2.5rem 1rem !important;
-  }
+  .pricing-header h2 { font-size: 1.4rem; }
+  .pricing-cards { flex-direction: column; align-items: stretch; }
+  .pricing-card { max-width: 100%; padding: 1.5rem 1.25rem; }
+  .pricing-card--wide { max-width: 100%; }
+  .pricing-number { font-size: 2.4rem; }
 
-  .pricing-card {
-    max-width: 100% !important;
-    width: 100% !important;
-  }
+  /* FAQ */
+  .faq-question { font-size: 0.92rem; padding: 0.9rem 1rem; line-height: 1.4; }
+  .faq-answer p { font-size: 0.87rem; }
 
-  .pricing-cards {
-    flex-direction: column !important;
-  }
+  /* Intake form */
+  .intake-hero { padding: 2rem 1rem; }
+  .intake-hero h1 { font-size: 1.5rem; text-align: left; }
+  .intake-hero p { font-size: 0.9rem; text-align: left; }
+  .intake-section { padding: 1.75rem 1rem 3rem; }
+  .intake-form-wrap { padding: 1.5rem 1rem; }
+  .intake-thankyou { padding: 1.75rem 1rem; text-align: left; }
+  .intake-thankyou h2 { font-size: 1.4rem; text-align: left; }
+  .thankyou-lead { text-align: left; font-size: 0.92rem; }
+  .thankyou-icon { text-align: left; font-size: 2.5rem; margin-bottom: 0.75rem; }
+  .thankyou-freetest { padding: 1.25rem; }
+  .thankyou-freetest h3 { font-size: 1rem; }
+  .thankyou-freetest p { font-size: 0.88rem; line-height: 1.55; }
 
-  /* Buttons full width on mobile */
-  .btn {
-    display: block !important;
-    width: 100% !important;
-    text-align: center !important;
-    box-sizing: border-box !important;
-  }
+  /* Blog */
+  .blog-article-full { padding: 1.75rem 1rem; }
+  .blog-article-container { max-width: 100%; }
+  .blog-article-container h2 { font-size: 1.3rem; }
+  .article-body p { font-size: 0.92rem; line-height: 1.7; }
 
-  .hero-buttons .btn {
-    width: 100% !important;
-  }
+  /* WhatsApp float */
+  .whatsapp-float { bottom: 1rem; right: 1rem; padding: 0.5rem 0.85rem; font-size: 0.78rem; }
 }
 
 @media screen and (max-width: 400px) {
   .container,
-  .intake-container {
-    padding-left: 0.75rem !important;
-    padding-right: 0.75rem !important;
-  }
-  h1 { font-size: 1.5rem !important; }
-  h2 { font-size: 1.25rem !important; }
+  .intake-container { padding-left: 0.75rem; padding-right: 0.75rem; }
+  h1 { font-size: 1.45rem; }
+  h2 { font-size: 1.2rem; }
 }
