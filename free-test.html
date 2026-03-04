@@ -8,51 +8,22 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    @media (max-width: 768px) {
-      .test-hero {
-        padding: 1.75rem 1rem !important;
-        text-align: left !important;
-        background-color: #EAF1F8;
-      }
-      .test-hero-content {
-        max-width: 100% !important;
-        padding: 0 !important;
-      }
-      .test-hero-tag {
-        display: block !important;
-        text-align: left !important;
-        margin-bottom: 0.6rem !important;
-        font-size: 0.75rem !important;
-      }
-      .test-hero h1 {
-        font-size: 1.6rem !important;
-        text-align: left !important;
-        line-height: 1.25 !important;
-        margin-bottom: 0.75rem !important;
-      }
-      .test-hero p {
-        font-size: 0.92rem !important;
-        text-align: left !important;
-        max-width: 100% !important;
-        line-height: 1.6 !important;
-      }
-      .quiz-section {
-        padding: 1.5rem 1rem 3rem !important;
-      }
-      .quiz-container {
-        max-width: 100% !important;
-        padding: 0 !important;
-      }
-      .quiz-card {
-        padding: 1.5rem 1rem !important;
-      }
-      .question-text {
-        font-size: 1rem !important;
-      }
-      .answer-btn {
-        width: 80px !important;
-        height: 80px !important;
-      }
+    @media screen and (max-width: 768px) {
+      .test-hero { padding: 1.5rem 1rem !important; text-align: left !important; }
+      .test-hero-content { max-width: 100% !important; padding: 0 !important; }
+      .test-hero h1 { font-size: 1.6rem !important; text-align: left !important; line-height: 1.25 !important; }
+      .test-hero p { font-size: 0.9rem !important; text-align: left !important; max-width: 100% !important; margin: 0 0 0.75rem 0 !important; line-height: 1.6 !important; }
+      .test-hero-tag { font-size: 0.78rem !important; margin-bottom: 0.6rem !important; }
+      .quiz-section { padding: 1.25rem 1rem 3rem !important; }
+      .quiz-container { max-width: 100% !important; padding: 0 !important; }
+      .quiz-meta { font-size: 0.82rem !important; }
+      .quiz-card { padding: 1.25rem 1rem !important; }
+      .question-text { font-size: 1rem !important; }
+      .answer-buttons { gap: 1rem !important; }
+      .answer-btn { width: 75px !important; height: 75px !important; font-size: 0.95rem !important; }
+      .result-booking { padding: 1.25rem 0 !important; }
+      .result-booking h3 { font-size: 1rem !important; }
+      .result-booking p { font-size: 0.9rem !important; }
     }
   </style>
 </head>
@@ -233,39 +204,11 @@
           <p>This assessment is not a clinical diagnosis. It is intended as a gentle, reflective tool to help you understand your habits. If you are in crisis, please reach out to a professional immediately.</p>
         </div>
 
-        <!-- Booking cards -->
+        <!-- Booking CTA -->
         <div class="result-booking">
-          <h3>Your next step doesn't have to be a big one</h3>
-          <p>Whether you want to talk it through or you're ready to start — we're here.</p>
-          <div class="booking-cards result-booking-cards">
-
-            <div class="booking-card booking-card--free">
-              <div class="booking-card-badge">Free</div>
-              <h3>Free Initial Consultation</h3>
-              <p class="booking-card-duration">⏱ 15 Minutes</p>
-              <p class="booking-card-desc">Let's have a relaxed, no-obligation chat about what you're going through and how Gentle Steps can help.</p>
-              <ul class="booking-card-features">
-                <li>✓ No commitment required</li>
-                <li>✓ Completely confidential</li>
-                <li>✓ Held via video or phone</li>
-              </ul>
-              <a href="https://calendly.com/gentlestepsorg/free-consultation" class="btn btn--outline" target="_blank">Book Free Consultation</a>
-            </div>
-
-            <div class="booking-card booking-card--paid">
-              <div class="booking-card-badge booking-card-badge--paid">Coaching</div>
-              <h3>Book a Coaching Session</h3>
-              <p class="booking-card-duration">⏱ 60 Minutes</p>
-              <p class="booking-card-desc">Ready to take that step? Book a full one-on-one session tailored entirely to your journey.</p>
-              <ul class="booking-card-features">
-                <li>✓ Personalised to your goals</li>
-                <li>✓ Evidence-based methods</li>
-                <li>✓ Confirmed instantly to your calendar</li>
-              </ul>
-              <a href="https://calendly.com/gentlestepsorg/addictionrecoverycoaching" class="btn" target="_blank">Book a Session</a>
-            </div>
-
-          </div>
+          <h3>Ready to take the next step?</h3>
+          <p>Book a coaching session with Moses — personalised entirely to what you've just shared.</p>
+          <a href="booking-form.html" class="btn" style="display:block; text-align:center; margin-top:1rem;">Book a Session with Moses</a>
         </div>
 
       </div>
@@ -283,7 +226,7 @@
 
 
   <!-- WHATSAPP FLOATING BUTTON -->
-  <a href="https://wa.me/254706686488?text=Hi%20Moses%2C%20I%20came%20across%20Gentle%20Steps%20and%20I%27d%20like%20to%20know%20more%20about%20coaching." 
+  <a href="https://wa.me/254738683823?text=Hi%20Moses%2C%20I%20came%20across%20Gentle%20Steps%20and%20I%27d%20like%20to%20know%20more%20about%20coaching." 
      class="whatsapp-float" 
      target="_blank" 
      aria-label="Chat with Moses on WhatsApp">
